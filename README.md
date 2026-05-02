@@ -48,9 +48,9 @@ This comprehensive Python course takes you from absolute beginner to advanced Py
 ### **02. Control Structures** (`03_conditionals/`, `04_loops/`)
 - Conditional statements and decision making
 - Loops (for, while) with practical examples
-- Real-world scenarios like chai shop automation
+- Real-world scenarios like coffee shop automation
 
-### **03. Functions & Modularity** (`05_functions/`, `06_chai_business/`)
+### **03. Functions & Modularity** (`05_functions/`, `06_coffee_business/`)
 - Function definition, parameters, and return values
 - Scope, global, and nonlocal keywords
 - Building modular applications with packages
