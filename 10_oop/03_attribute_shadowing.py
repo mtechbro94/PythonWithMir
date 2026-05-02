@@ -1,16 +1,16 @@
-class Chai:
+class Coffee:
     temperature = "hot"
     strength = "Strong"
 
 
-cutting = Chai()
+cutting = Coffee()
 print(cutting.temperature)
 
 cutting.temperature = "Mild"
 cutting.cup = "small"
 print("After changing ",cutting.temperature)
 print("cup size is  ",cutting.cup)
-print("Direct look into the class ", Chai.temperature)
+print("Direct look into the class ", Coffee.temperature)
 
 del cutting.temperature
 del cutting.cup

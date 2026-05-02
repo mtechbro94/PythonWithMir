@@ -1,12 +1,12 @@
-class Chai:
+class Coffee:
     pass
 
-class ChaiTime:
+class CoffeeTime:
     pass
 
-print(type(Chai))
+print(type(Coffee))
 
-ginger_tea = Chai()
-print(type(ginger_tea))
-print(type(ginger_tea) is Chai)
-print(type(ginger_tea) is ChaiTime)
+espresso = Coffee()
+print(type(espresso))
+print(type(espresso) is Coffee)
+print(type(espresso) is CoffeeTime)

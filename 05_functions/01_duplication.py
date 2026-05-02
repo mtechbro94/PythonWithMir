@@ -1,8 +1,8 @@
-def print_order(name, chai_type):
-    print(f"{name} orderded {chai_type} chai!")
+def print_order(name, coffee_type):
+    print(f"{name} ordered {coffee_type} coffee!")
 
 
-print_order("Aman", "masala")
-print_order("Hitesh", "Ginger")
-print_order("Jia", "Tulsi")
+print_order("Aman", "espresso")
+print_order("Hitesh", "latte")
+print_order("Jia", "cappuccino")
 

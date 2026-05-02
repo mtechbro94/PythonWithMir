@@ -1,9 +1,9 @@
-chai_menu = {"masala": 30, "ginger": 40}
+coffee_menu = {"espresso": 30, "latte": 40}
 
 try:
-    chai_menu["elaichi"]
+    coffee_menu["cappuccino"]
 except KeyError:
     print("The key that you are tying to access does not exists")
 
 
-print("Hello chai code")
+print("Hello coffee code")

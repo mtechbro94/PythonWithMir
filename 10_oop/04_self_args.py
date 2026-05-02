@@ -1,14 +1,14 @@
-class Chaicup:
+class Coffeecup:
     size = 150 #ml
 
     def describe(self):
-        return f"A {self.size}ml chai cup"
+        return f"A {self.size}ml coffee cup"
     
 
-cup = Chaicup()
+cup = Coffeecup()
 print(cup.describe())
-print(Chaicup.describe(cup))
+print(Coffeecup.describe(cup))
 
-cup_two = Chaicup()
+cup_two = Coffeecup()
 cup_two.size = 100
-print(Chaicup.describe(cup_two))
+print(Coffeecup.describe(cup_two))

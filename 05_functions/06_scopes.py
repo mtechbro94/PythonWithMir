@@ -1,21 +1,21 @@
-def serve_chai():
-    chai_type = "Masala" # local scope
-    print(f"Inside function {chai_type}")
+def serve_coffee():
+    coffee_type = "Espresso" # local scope
+    print(f"Inside function {coffee_type}")
 
 
-chai_type = "Lemon"
-serve_chai()
-print(f"Outside function: {chai_type}")
+coffee_type = "Americano"
+serve_coffee()
+print(f"Outside function: {coffee_type}")
 
 
-def chai_counter():
-    chai_order = "lemon" # Enclosing scope
+def coffee_counter():
+    coffee_order = "latte" # Enclosing scope
     def print_order():
-        chai_order = "Ginger"
-        print("Inner:", chai_order)
+        coffee_order = "Cappuccino"
+        print("Inner:", coffee_order)
     print_order()
-    print("Outer: ", chai_order)
+    print("Outer: ", coffee_order)
 
-chai_order = "Tulsi" # Global
-chai_counter()
-print("Global :", chai_order)
+coffee_order = "Mocha" # Global
+coffee_counter()
+print("Global :", coffee_order)

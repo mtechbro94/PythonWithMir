@@ -7,7 +7,7 @@ Your program should:
 1. Ask for two names (friend A and friend B).
 2. Count shared letters, vowels, and character positions to create a compatibility score (0-100).
 3. Display the percentage with a themed message like:
-   "You're like chai and samosa — made for each other!" or 
+   "You're like coffee and donut — made for each other!" or 
    "Well... opposites attract, maybe?"
 
 Bonus:

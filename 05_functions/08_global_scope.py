@@ -1,11 +1,11 @@
-chai_type = "Plain"
+coffee_type = "Black"
 
 def front_desk():
     def kitchen():
-        global chai_type
-        chai_type = "Irnai"
+        global coffee_type
+        coffee_type = "Americano"
     kitchen()
 
 
 front_desk()
-print("Final global chai: ", chai_type)
+print("Final global coffee: ", coffee_type)

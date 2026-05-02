@@ -1,30 +1,30 @@
-chai_order = dict(type="Masala Chai", size="Large", sugar=2)
-print(f"Chai order: {chai_order}")
+coffee_order = dict(type="Espresso", size="Large", sugar=2)
+print(f"Coffee order: {coffee_order}")
 
-chai_recipe = {}
-chai_recipe["base"] = "black tea"
-chai_recipe["liquid"] = "milk"
+coffee_recipe = {}
+coffee_recipe["base"] = "coffee grounds"
+coffee_recipe["liquid"] = "milk"
 
-print(f"Recipe base: {chai_recipe['base']}")
-print(f"Recipe: {chai_recipe}")
-del chai_recipe["liquid"]
-print(f"Recipe: {chai_recipe}")
+print(f"Recipe base: {coffee_recipe['base']}")
+print(f"Recipe: {coffee_recipe}")
+del coffee_recipe["liquid"]
+print(f"Recipe: {coffee_recipe}")
 
-print(f"Is sugar in the order? {'sugar' in chai_order}")
+print(f"Is sugar in the order? {'sugar' in coffee_order}")
 
-chai_order = {"type": "Ginger Chai", "size": "Medium", "sugar": 1}
+coffee_order = {"type": "Latte", "size": "Medium", "sugar": 1}
 
-# print(f"Order details (keys): {chai_order.keys()}")
-# print(f"Order details (values): {chai_order.values()}")
-# print(f"Order details (items): {chai_order.items()}")
+# print(f"Order details (keys): {coffee_order.keys()}")
+# print(f"Order details (values): {coffee_order.values()}")
+# print(f"Order details (items): {coffee_order.items()}")
 
-last_item = chai_order.popitem()
+last_item = coffee_order.popitem()
 print(f"Removed last item: {last_item}")
 
-extra_spices = {"cardamom": "crushed", "ginger": "sliced"}
-chai_recipe.update(extra_spices)
+extra_ingredients = {"syrup": "vanilla", "milk": "almond"}
+coffee_recipe.update(extra_ingredients)
 
-print(f"Updated chai recipe: {chai_recipe}")
+print(f"Updated coffee recipe: {coffee_recipe}")
 
-customer_note = chai_order.get("size", "NO Note")
+customer_note = coffee_order.get("size", "NO Note")
 print(f"customer_note is: {customer_note}")

@@ -13,18 +13,18 @@ if remainder := value % 5:
 
 # available_sizes = ["small", "medium", "large"]
 
-# if (requested_size := input("Enter your chai cup size: ")) in available_sizes:
-#     print(f"Serving {requested_size} chai")
+# if (requested_size := input("Enter your coffee cup size: ")) in available_sizes:
+#     print(f"Serving {requested_size} coffee")
 # else:
 #     print(f"Size is unavailable - {requested_size}")
 
 
 
-flavors = ["masala", "ginger", "lemon", "mint"]
+flavors = ["espresso", "latte", "americano", "cappuccino"]
 
 print("Available flavors: ", flavors)
 
 while (flavor := input("Choose your flavor: ")) not in flavors:
     print(f"Sorry, {flavor} is not available")
 
-print(f"You choose {flavor} chai")
+print(f"You choose {flavor} coffee")

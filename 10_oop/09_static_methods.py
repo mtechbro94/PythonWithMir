@@ -1,4 +1,4 @@
-class ChaiUtils:
+class CoffeeUtils:
     @staticmethod
     def clean_ingredients(text):
         return [item.strip() for item in text.split(",")]
@@ -6,5 +6,5 @@ class ChaiUtils:
 
 raw = " water , milk , ginger , honey "
 
-cleaned = ChaiUtils.clean_ingredients(raw)
+cleaned = CoffeeUtils.clean_ingredients(raw)
 print(cleaned)

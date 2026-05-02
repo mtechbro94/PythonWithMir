@@ -9,9 +9,9 @@ async def brew(name):
 
 async def main():
     await asyncio.gather(
-        brew("Masala chai"),
-        brew("Green chai"),
-        brew("Ginger chai"),
+        brew("Espresso coffee"),
+        brew("Americano coffee"),
+        brew("Latte coffee"),
     )
 
 asyncio.run(main())

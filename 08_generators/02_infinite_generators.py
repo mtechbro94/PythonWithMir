@@ -1,11 +1,11 @@
-def infinite_chai():
+def infinite_coffee():
     count = 1
     while True:
-        yield f"Refil #{count}"
+        yield f"Refill #{count}"
         count += 1
 
-refill = infinite_chai()
-user2 = infinite_chai()
+refill = infinite_coffee()
+user2 = infinite_coffee()
 
 for _ in range(5):
     print(next(refill))

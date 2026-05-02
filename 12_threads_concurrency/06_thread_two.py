@@ -1,14 +1,14 @@
 import threading
 import time
 
-def prepare_chai(type_, wait_time ):
-    print(f"{type_} chai: brewing...")
+def prepare_coffee(type_, wait_time ):
+    print(f"{type_} coffee: brewing...")
     time.sleep(wait_time)
-    print(f"{type_} chai: Ready.")
+    print(f"{type_} coffee: Ready.")
 
 
-t1 = threading.Thread(target=prepare_chai, args=("Masala", 2))
-t2 = threading.Thread(target=prepare_chai, args=("Ginger", 3))
+t1 = threading.Thread(target=prepare_coffee, args=("Espresso", 2))
+t2 = threading.Thread(target=prepare_coffee, args=("Latte", 3))
 
 t1.start()
 t2.start()

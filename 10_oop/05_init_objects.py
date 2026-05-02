@@ -1,14 +1,14 @@
-class ChaiOrder:
+class CoffeeOrder:
     
     def __init__(self, type_, size):
         self.type = type_
         self.size = size
 
     def summary(self):
-        return f"{self.size}ml of {self.type} chai"
+        return f"{self.size}ml of {self.type} coffee"
     
-order = ChaiOrder("Masala", 200)
+order = CoffeeOrder("Espresso", 200)
 print(order.summary())
 
-order_two = ChaiOrder("Ginger", 220)
+order_two = CoffeeOrder("Latte", 220)
 print(order_two.summary())

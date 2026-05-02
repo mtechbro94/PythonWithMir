@@ -1,31 +1,31 @@
-class BaseChai:
+class BaseCoffee:
     def __init__(self, type_):
         self.type = type_
 
     def prepare(self):
-        print(f"Preparing {self.type} chai....")
+        print(f"Preparing {self.type} coffee....")
 
-class MasalaChai(BaseChai):
-    def add_spices(self):
-        print("Adding cardamom, ginger, cloves.")
+class EspressoCoffee(BaseCoffee):
+    def add_flavors(self):
+        print("Adding vanilla, caramel.")
 
 
-class ChaiShop:
-    chai_cls = BaseChai
+class CoffeeShop:
+    coffee_cls = BaseCoffee
 
     def __init__(self):
-        self.chai = self.chai_cls("Regular")
+        self.coffee = self.coffee_cls("Regular")
 
     def serve(self):
-        print(f"Serving {self.chai.type} chai in the shop")
-        self.chai.prepare()
+        print(f"Serving {self.coffee.type} coffee in the shop")
+        self.coffee.prepare()
 
-class FancyChaiShop(ChaiShop):
-    chai_cls = MasalaChai
+class FancyCoffeeShop(CoffeeShop):
+    coffee_cls = EspressoCoffee
 
 
-shop = ChaiShop()
-fancy = FancyChaiShop()
+shop = CoffeeShop()
+fancy = FancyCoffeeShop()
 shop.serve()
 fancy.serve()
-fancy.chai.add_spices()
+fancy.coffee.add_flavors()

@@ -1,18 +1,18 @@
-favourite_chais = [
-    "Masala Chai", "Green Tea", "Masala Chai",
-    "Lemon Tea", "Green Tea", "Elaichi Chai"
+favourite_coffees = [
+    "Espresso", "Americano", "Espresso",
+    "Cold Brew", "Americano", "Cappuccino"
 ]
 
-unique_chai = {chai for chai in favourite_chais }
-print(unique_chai)
+unique_coffee = {coffee for coffee in favourite_coffees }
+print(unique_coffee)
 
 
 recipes = {
-    "Masala Chai": ["ginger", "cardamom", "clove"],
-    "Elaichi Chai": ["cardamom", "milk"],
-    "Spicy Chai": ["ginger", "black pepper", "clove"],
+    "Espresso": ["espresso beans", "water"],
+    "Cappuccino": ["espresso", "milk", "foam"],
+    "Latte": ["espresso", "steamed milk"],
 }
 
-unique_spices = {spice for ingredients in recipes.values() for spice in ingredients}
+unique_ingredients = {ingredient for ingredients in recipes.values() for ingredient in ingredients}
 
-print(unique_spices)
+print(unique_ingredients)

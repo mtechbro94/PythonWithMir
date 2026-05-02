@@ -1,27 +1,27 @@
-def pure_chai(cups):
+def pure_coffee(cups):
     return cups * 10
 
-total_chai = 0
+total_coffee = 0
 
 # not recommended
-def impure_chai(cups):
-    global total_chai
-    total_chai += cups
+def impure_coffee(cups):
+    global total_coffee
+    total_coffee += cups
 
 
-def pour_chai(n):
+def pour_coffee(n):
     print(n)
     if n == 0:
         return "All cups poured"
-    return pour_chai(n-1)
+    return pour_coffee(n-1)
 
-print(pour_chai(3))
-
-
-
-chai_types = ["light", "kadak", "ginger", "kadak"]
+print(pour_coffee(3))
 
 
-strong_chai = list(filter(lambda chai: chai!="kadak", chai_types))
 
-print(strong_chai)
+coffee_types = ["light", "strong", "latte", "strong"]
+
+
+strong_coffee = list(filter(lambda coffee: coffee!="strong", coffee_types))
+
+print(strong_coffee)

@@ -1,43 +1,43 @@
-# chai = "Ginger chai"
+# coffee = "Latte"
 
-# def prepare_chai(order):
+# def prepare_coffee(order):
 #     print("Preparing ", order)
 
 
-# prepare_chai(chai)
-# print(chai)
+# prepare_coffee(coffee)
+# print(coffee)
 
 
-chai = [1, 2, 3]
+coffee = [1, 2, 3]
 
-def edit_chai(cup):
+def edit_coffee(cup):
     cup[1] = 42
 
-edit_chai(chai)
-print(chai)
+edit_coffee(coffee)
+print(coffee)
 
 
-def make_chai(tea, milk, sugar):
+def make_coffee(tea, milk, sugar):
     print(tea, milk, sugar)
 
-make_chai("Darjeeling", "Yes", "Low") #positional
-make_chai(tea="Green", sugar="Medium", milk="No") #keywords
+make_coffee("Arabica", "Yes", "Low") #positional
+make_coffee(tea="Robusta", sugar="Medium", milk="No") #keywords
 
 
-def special_chai(*ingredients, **extras):
+def special_coffee(*ingredients, **extras):
     print("Ingredients", ingredients)
     print("Extras", extras)
 
-special_chai("Cinnamon", "Cardmom", sweetener="Honey", foam="yes")
+special_coffee("Vanilla", "Caramel", sweetener="Honey", foam="yes")
 
-# def chai_order(order=[]):
-#     order.append("Masala")
+# def coffee_order(order=[]):
+#     order.append("Espresso")
 #     print(order)
 
-def chai_order(order=None):
+def coffee_order(order=None):
     if order is None:
         order = []
     print(order)
 
-chai_order()
-chai_order()
+coffee_order()
+coffee_order()

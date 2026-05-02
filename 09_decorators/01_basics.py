@@ -9,7 +9,7 @@ def my_decorator(func):
 
 @my_decorator
 def greet():
-    print("Hello from decorators class from chaicode")
+    print("Hello from decorators class from codewithcoffee")
 
 
 greet()

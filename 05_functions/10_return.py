@@ -1,15 +1,15 @@
-# def make_chai():
-#     # return "Here is your masal chai"
-#     print("Here is your masala chai")
+# def make_coffee():
+#     # return "Here is your espresso"
+#     print("Here is your espresso")
 
-# return_value = make_chai()
+# return_value = make_coffee()
 
 # print(return_value)
 
-def idle_chaiwala():
+def idle_barista():
     pass
 
-print(idle_chaiwala())
+print(idle_barista())
 
 def sold_cups():
     return 120
@@ -17,19 +17,19 @@ def sold_cups():
 total = sold_cups()
 print(total)
 
-def chai_status(cups_left):
+def coffee_status(cups_left):
     if cups_left == 0:
-        return "Sorry, chai over"
-    return "Chai is ready"
-    print("chai")
+        return "Sorry, coffee over"
+    return "Coffee is ready"
+    print("coffee")
 
-print(chai_status(0))
-print(chai_status(5))
+print(coffee_status(0))
+print(coffee_status(5))
 
 
-def chai_report():
+def coffee_report():
     return 100, 20, 10 # sold, remaining
 
-sold, remaining, not_paid = chai_report()
+sold, remaining, not_paid = coffee_report()
 print("Sold: ", sold)
 print("Remaining: ", remaining)

@@ -1,12 +1,12 @@
-def chai_customer():
-    print("Welcome ! What chai would you like ?")
+def coffee_customer():
+    print("Welcome ! What coffee would you like ?")
     order = yield
     while True:
         print(f"Preparing: {order}")
         order = yield
 
-stall = chai_customer()
+stall = coffee_customer()
 next(stall) # start the generator
 
-stall.send("Masala Chai")
-stall.send("Lemon Chai")
+stall.send("Espresso")
+stall.send("Cold Brew")

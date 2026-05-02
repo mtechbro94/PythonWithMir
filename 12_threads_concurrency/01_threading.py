@@ -6,14 +6,14 @@ def take_orders():
         print(f"Taking order for #{i}")
         time.sleep(2)
 
-def brew_chai():
+def brew_coffee():
     for i in range(1, 4):
-        print(f"Brewing chai for #{i}")
+        print(f"Brewing coffee for #{i}")
         time.sleep(3)
         
 # create threads
 order_thread = threading.Thread(target=take_orders)
-brew_thread = threading.Thread(target=brew_chai)
+brew_thread = threading.Thread(target=brew_coffee)
 
 order_thread.start()
 brew_thread.start()
@@ -22,4 +22,4 @@ brew_thread.start()
 order_thread.join()
 brew_thread.join()
 
-print(f"All orders taken and chai brewed")
+print(f"All orders taken and coffee brewed")

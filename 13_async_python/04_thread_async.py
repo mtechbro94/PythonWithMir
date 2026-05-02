@@ -10,7 +10,7 @@ def check_stock(item):
 async def main():
     loop = asyncio.get_running_loop()
     with ThreadPoolExecutor() as pool:
-        result = await loop.run_in_executor(pool, check_stock, "Masala chai")
+        result = await loop.run_in_executor(pool, check_stock, "Espresso coffee")
         print(result)
 
 asyncio.run(main())

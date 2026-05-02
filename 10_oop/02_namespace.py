@@ -1,19 +1,19 @@
-class Chai:
-    origin = "India"
+class Coffee:
+    origin = "Ethiopia"
 
-print(Chai.origin)
+print(Coffee.origin)
 
-Chai.is_hot = True
-print(Chai.is_hot)
+Coffee.is_hot = True
+print(Coffee.is_hot)
 
-# creating objects from class Chai
+# creating objects from class Coffee
 
-masala = Chai()
-print(f"Masala {masala.origin}")
-print(f"Masala {masala.is_hot}")
-masala.is_hot = False
+espresso = Coffee()
+print(f"Espresso {espresso.origin}")
+print(f"Espresso {espresso.is_hot}")
+espresso.is_hot = False
 
-print("Class: ", Chai.is_hot)
-print(f"Masala {masala.is_hot}")
-masala.flavor = "Masala"
-print(masala.flavor)
+print("Class: ", Coffee.is_hot)
+print(f"Espresso {espresso.is_hot}")
+espresso.flavor = "Espresso"
+print(espresso.flavor)

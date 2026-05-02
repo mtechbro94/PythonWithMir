@@ -1,11 +1,11 @@
 menu = [
-    "Masala Chai",
-    "Iced Lemon Tea",
-    "Green Tea",
-    "Iced Peach Tea",
-    "Ginger chai"
+    "Espresso",
+    "Iced Coffee",
+    "Americano",
+    "Cold Brew",
+    "Latte"
 ]
 
-iced_tea = [my_tea for my_tea in menu if "Iced" in my_tea]
+iced_coffee = [my_coffee for my_coffee in menu if "Iced" in my_coffee]
 
-print(iced_tea)
+print(iced_coffee)

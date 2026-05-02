@@ -1,21 +1,21 @@
-def chai_flavor(flavor="masala"):
-    """Return the flavor of chai."""
-    chai="ginger"
+def coffee_flavor(flavor="espresso"):
+    """Return the flavor of coffee."""
+    coffee="latte"
     return flavor
 
 
-print(chai_flavor.__doc__)
-print(chai_flavor.__name__)
+print(coffee_flavor.__doc__)
+print(coffee_flavor.__name__)
 
 help(len)
 
-def generate_bill(chai=0, samosa=0):
+def generate_bill(coffee=0, samosa=0):
     """
-    Calculate the total bill for chai and samosa
+    Calculate the total bill for coffee and samosa
 
-    :param chai: Number of chai cups (10 rupees each)
+    :param coffee: Number of coffee cups (10 rupees each)
     :param samosa: NUmber of samosa (15 rupees each)
     : return: (total amount, thank you message as string)
     """
-    total = chai*10 + samosa*15
-    return total, "Thank you for visiting chaicode.com"
+    total = coffee*10 + samosa*15
+    return total, "Thank you for visiting codewithcoffee.com"

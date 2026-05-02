@@ -1,27 +1,27 @@
-def local_chai():
-    yield "Masala Chai"
-    yield "Ginger Chai"
+def local_coffee():
+    yield "Espresso"
+    yield "Latte"
 
-def imported_chai():
-    yield "Matcha"
-    yield "Oolong"
+def imported_coffee():
+    yield "Americano"
+    yield "Cappuccino"
 
 def full_menu():
-    yield from local_chai()
-    yield from imported_chai()
+    yield from local_coffee()
+    yield from imported_coffee()
 
-for chai in full_menu():
-    print(chai)
+for coffee in full_menu():
+    print(coffee)
 
 
-def chai_stall():
+def coffee_stall():
     try:
         while True:
-            order = yield "Waiting for chai order"
+            order = yield "Waiting for coffee order"
     except:
-        print("Stall closed, No more chai")
+        print("Stall closed, No more coffee")
 
 
-stall = chai_stall()
+stall = coffee_stall()
 print(next(stall))
 stall.close() #cleanup

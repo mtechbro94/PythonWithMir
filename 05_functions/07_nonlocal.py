@@ -1,11 +1,11 @@
 
-chai_type = "ginger"
+coffee_type = "latte"
 def update_order():
-    chai_type = "Elaichi"
+    coffee_type = "cappuccino"
     def kitchen():
-        nonlocal chai_type
-        chai_type = "Kesar"
+        nonlocal coffee_type
+        coffee_type = "mocha"
     kitchen()
-    print("After kitchen update", chai_type)
+    print("After kitchen update", coffee_type)
 
 update_order()
